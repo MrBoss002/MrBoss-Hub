@@ -82,21 +82,94 @@ main {
   flex: 1;
 }
 
-.hero {
-  margin-bottom: 2rem;
+/* --- Home Hero with Avatar --- */
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.hero h1 {
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hero-text h1 {
   font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
-.hero p {
+.hero-text p {
   color: var(--text-muted);
   font-size: 1.1rem;
 }
 
-/* --- Grid & Cards --- */
+.hero-simple {
+  margin-bottom: 2rem;
+}
+
+.hero-simple h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-simple p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* --- Home Showcase Sections --- */
+.section-title {
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem 0;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.featured-banner {
+  background-color: var(--card-bg);
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.home-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.home-nav-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.home-nav-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-color);
+}
+
+/* --- Projects Grid & Cards --- */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -136,7 +209,7 @@ main {
   border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
-/* --- Tech Stack Tags --- */
+/* --- Tech Tags --- */
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
@@ -154,7 +227,7 @@ main {
   border: 1px solid var(--border-color);
 }
 
-/* --- Buttons & Action Rows --- */
+/* --- Universal Buttons --- */
 .card-actions {
   display: flex;
   flex-wrap: wrap;
@@ -166,46 +239,36 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.45rem 0.85rem;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 600;
+  background-color: #334155;
+  color: #ffffff;
+  border: 1px solid var(--border-color);
   transition: all 0.2s ease;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-hover);
+  transform: translateY(-1px);
 }
 
 .btn-primary {
   background-color: var(--accent-color);
   color: #ffffff;
+  border-color: var(--accent-hover);
 }
 
 .btn-primary:hover {
   background-color: var(--accent-hover);
 }
 
-.btn-secondary {
-  background-color: #334155;
-  color: #ffffff;
-}
-
-.btn-secondary:hover {
-  background-color: #475569;
-}
-
-.btn-action {
-  background-color: transparent;
-  color: var(--text-muted);
-  border: 1px solid var(--border-color);
-}
-
-.btn-action:hover {
-  color: var(--text-main);
-  border-color: var(--accent-color);
-  background-color: rgba(0, 136, 204, 0.1);
-}
-
-/* --- Contact List --- */
+/* --- Contact List & Dedicated Sections --- */
 .contact-list {
   list-style: none;
   display: flex;
@@ -223,10 +286,41 @@ main {
   align-items: center;
 }
 
-.contact-item a {
-  color: var(--accent-hover);
-  text-decoration: none;
-  font-weight: 600;
+.special-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.special-box-support {
+  border-color: rgba(234, 179, 8, 0.4);
+  background-color: rgba(30, 41, 59, 0.9);
+}
+
+/* Responsive adjustment for Mobile */
+@media (max-width: 600px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-item,
+  .special-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .contact-item .btn,
+  .special-box .btn {
+    width: 100%;
+  }
 }
 
 /* --- Footer --- */
