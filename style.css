@@ -85,7 +85,7 @@ main {
 /* --- Home Hero with Avatar --- */
 .hero-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Aligns avatar to top */
   gap: 1.5rem;
   margin-bottom: 2.5rem;
 }
