@@ -268,6 +268,12 @@ main {
   background-color: var(--accent-hover);
 }
 
+.btn-single-line {
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0.6rem 1.25rem;
+}
+
 /* --- Contact List & Dedicated Sections --- */
 .contact-list {
   list-style: none;
