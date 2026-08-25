@@ -1,6 +1,6 @@
 <div align="center">
 
-  # 🌐 MrBossHub - A Developer Portfolio Web
+  # 🌐 MrBossHub - A Developer Portfolio
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-a855f7?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
