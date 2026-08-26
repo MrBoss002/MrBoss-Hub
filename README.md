@@ -19,7 +19,7 @@ Want to explore the live website? Launch the platform directly in your browser:
 
 <div align="center">
 
-  [![Launch Live Website](https://img.shields.io/badge/Website-Launch_Mr._Boss_Hub-0088cc?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mrboss002.github.io/MrBoss-Hub/)
+  [![Launch Live Website](https://img.shields.io/badge/Website-Launch_MrBoss-Hub-0088cc?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mrboss002.github.io/)
 
 </div>
 
@@ -42,7 +42,7 @@ To build and host your own portfolio using GitHub Pages, fork this repository di
 
 <div align="center">
 
-  [![Fork Repository](https://img.shields.io/badge/Fork-This_Repo-10B981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MrBoss002/MrBoss-Hub/fork)
+  [![Fork Repository](https://img.shields.io/badge/Fork-This_Repo-10B981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MrBoss002/MrBoss002.github.io/fork)
 
 </div>
 
@@ -63,7 +63,7 @@ Go to your repository settings: **Settings > Pages**. Under **Build and deployme
 
 - **Source:** Select `Deploy from a branch`.
 - **Branch:** Choose `main` branch and `/ (root)` folder, then click **Save**.
-- Your portfolio will automatically deploy live at `https://YOUR-USERNAME.github.io/MrBoss-Hub/` within a couple of minutes!
+- Your portfolio will automatically deploy live at `https://YOUR-USERNAME.github.io/` within a couple of minutes!
 
 ---
 
