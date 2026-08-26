@@ -19,7 +19,7 @@ Want to explore the live website? Launch the platform directly in your browser:
 
 <div align="center">
 
-  [![Launch Live Website](https://img.shields.io/badge/Website-Launch_MrBoss-Hub-0088cc?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mrboss002.github.io/)
+  [![Launch Live Website](https://img.shields.io/badge/Website-Launch_MrBossHub-0088cc?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mrboss002.github.io/)
 
 </div>
 
